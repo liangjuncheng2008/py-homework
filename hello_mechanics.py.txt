@@ -1,0 +1,22 @@
+# 这是我的第一个Python程序
+# 日期：2025年X月X日
+
+def say_hello(name):
+    """向指定的人问好"""
+    return f"你好，{name}！欢迎来到计算力学的世界。"
+
+def calculate_stress(force, area):
+    """计算应力 = 力 / 面积"""
+    stress = force / area
+    return stress
+
+# 主程序
+if __name__ == "__main__":
+    # 测试问好功能
+    print(say_hello("未来的CAE工程师"))
+    
+    # 测试应力计算（单位：N 和 m²）
+    F = 1000  # 力，牛顿
+    A = 0.01  # 面积，平方米
+    sigma = calculate_stress(F, A)
+    print(f"当力为{F}N，面积为{A}m²时，应力为{sigma}Pa")
